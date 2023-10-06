@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Article\DetailArticleController;
+use App\Http\Controllers\Article\ListArticlesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +20,14 @@ Route::get('/', function () {
 });
 
 Route::get('/master', function () {
-    return view('master');
+    return view('frontend.master');
 });
 
 Route::get('/profil', function () {
     return view('profile');
+});
+
+Route::prefix('articles')->group(function () {
+    Route::get('/', ListArticlesController::class);
+    Route::get('/{article_id}', DetailArticleController::class);
 });
