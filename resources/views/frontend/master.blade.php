@@ -41,7 +41,7 @@
                 <div class="container flex-lg-row flex-nowrap align-items-center">
                     <div class="navbar-brand w-100">
                         <a href="./index.html">
-                            <img src="./assets/img/logo-manud.png" srcset="./assets/img/logo-manud.png 2x"
+                            <img src="{{ url('assets/img/logo-manud.png') }}" srcset="{{ url('assets/img/logo-manud.png') }} 2x"
                                 alt="" />
                         </a>
                     </div>
@@ -69,6 +69,28 @@
                                             </a></li> --}}
 
 
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown">Kabar Desa</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item" href="{{ route('list_articles') }}">Semua</a>
+                                        </li>
+                                        <li class="nav-item"><a class="dropdown-item" href="#">Kegiatan Umum</a>
+                                        </li>
+                                        <li class="nav-item"><a class="dropdown-item" href="#">Himbauan</a>
+                                        </li>
+                                        <li class="nav-item"><a class="dropdown-item" href="#">Layanan Masyarakat</a>
+                                        </li>
+                                        <li class="nav-item"><a class="dropdown-item" href="#">Laporan Penggunaan Dana Desa</a>
+                                        </li>
+                                        {{-- <li class="nav-item"><a class="dropdown-item" href="#">Visi
+                                                & Misi</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="#">Tugas
+                                                & Fungsi</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="#">Struktur Organisasi
+                                            </a></li> --}}
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
