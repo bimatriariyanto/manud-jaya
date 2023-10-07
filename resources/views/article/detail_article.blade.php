@@ -3,21 +3,33 @@
     <section class="wrapper bg-soft-primary">
         <div class="container pt-10 pb-19 pt-md-14 pb-md-20 text-center">
             <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item "><a href="{{ route('list_articles') }}">Kabar Desa</a></li>
+                            <li class="breadcrumb-item active fw-bold" aria-current="page">
+                                Desa Harmoni: Kisah Kecil di Tengah Keindahan Alam
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-10 col-xl-8 mx-auto">
                     <div class="post-header">
-                        <div class="post-category text-line">
+                        {{-- <div class="post-category text-line">
                             <a href="#" class="hover" rel="category">Teamwork</a>
-                        </div>
+                        </div> --}}
                         <!-- /.post-category -->
-                        <h1 class="display-1 mb-4">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
+                        <h1 class="display-1 mb-4">Desa Harmoni: Kisah Kecil di Tengah Keindahan Alam</h1>
                         <ul class="post-meta mb-5">
-                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Jul 2021</span></li>
-                            <li class="post-author"><a href="#"><i class="uil uil-user"></i><span>By
+                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span>6 Oktober 2023</span></li>
+                            {{-- <li class="post-author"><a href="#"><i class="uil uil-user"></i><span>By
                                         Sandbox</span></a></li>
                             <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3<span>
                                         Comments</span></a></li>
                             <li class="post-likes"><a href="#"><i class="uil uil-heart-alt"></i>3<span>
-                                        Likes</span></a></li>
+                                        Likes</span></a></li> --}}
                         </ul>
                         <!-- /.post-meta -->
                     </div>
@@ -41,81 +53,58 @@
                                 <div class="classic-view">
                                     <article class="post">
                                         <div class="post-content mb-5">
-                                            <h2 class="h1 mb-4">Cras mattis consectetur purus fermentum</h2>
-                                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                                                fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet
-                                                rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet
-                                                fermentum. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit
-                                                tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                                                dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum.</p>
-                                            <p>Donec sed odio dui consectetur adipiscing elit. Etiam adipiscing tincidunt
-                                                elit, eu convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor.
-                                                Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at
-                                                sapien. Aenean tortor libero, condimentum ac laoreet vitae, varius tempor
-                                                nisi. Duis non arcu vel lectus urna mollis ornare vel eu leo.</p>
-                                            <div class="row g-6 mt-3 mb-10">
-                                                <div class="col-md-6">
-                                                    <figure class="hover-scale rounded cursor-dark"><a
-                                                            href="./assets/img/photos/b8-full.jpg"
-                                                            data-glightbox="title: Heading; description: Purus Vulputate Sem Tellus Quam"
-                                                            data-gallery="post"> <img src="./assets/img/photos/b8.jpg"
-                                                                alt="" /></a></figure>
-                                                </div>
-                                                <!--/column -->
-                                                <div class="col-md-6">
-                                                    <figure class="hover-scale rounded cursor-dark"><a
-                                                            href="./assets/img/photos/b9-full.jpg" data-glightbox
-                                                            data-gallery="post"> <img src="./assets/img/photos/b9.jpg"
-                                                                alt="" /></a></figure>
-                                                </div>
-                                                <!--/column -->
-                                                <div class="col-md-6">
-                                                    <figure class="hover-scale rounded cursor-dark"><a
-                                                            href="./assets/img/photos/b10-full.jpg" data-glightbox
-                                                            data-gallery="post"> <img src="./assets/img/photos/b10.jpg"
-                                                                alt="" /></a></figure>
-                                                </div>
-                                                <!--/column -->
-                                                <div class="col-md-6">
-                                                    <figure class="hover-scale rounded cursor-dark"><a
-                                                            href="./assets/img/photos/b11-full.jpg" data-glightbox
-                                                            data-gallery="post"> <img src="./assets/img/photos/b11.jpg"
-                                                                alt="" /></a></figure>
-                                                </div>
-                                                <!--/column -->
-                                            </div>
-                                            <!-- /.row -->
-                                            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis
-                                                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                                Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Maecenas
-                                                faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
-                                                Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit
-                                                amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.
-                                                Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus
-                                                magna.</p>
-                                            <blockquote class="fs-lg my-8">
-                                                <p>Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi
-                                                    erat porttitor ligula lacinia odio sem nec elit purus.</p>
-                                                <footer class="blockquote-footer">Very important person</footer>
-                                            </blockquote>
-                                            <h3 class="h2 mb-4">Sit Vulputate Bibendum Purus</h3>
-                                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                                                fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed
-                                                consectetur. Cras mattis consectetur purus sit amet fermentum. Praesent
-                                                commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id
-                                                ligula porta felis euismod semper.</p>
-                                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                                                fermentum massa justo sit amet risus. Donec sed odio dui. Cras justo odio,
-                                                dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus
-                                                commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
-                                                risus. Sed posuere consectetur est at lobortis. Donec id elit non mi porta
-                                                gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis
-                                                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                                            <h2 class="h1 mb-4">Desa Harmoni: Kisah Kecil di Tengah Keindahan Alam</h2>
+                                            <p><i>Desa Harmoni, 6 Oktober 2023</i> - Di suatu sudut yang tersembunyi di pedalaman,
+                                                terletak sebuah desa kecil yang dikenal dengan nama &quot;Desa
+                                                Harmoni.&quot; Desa ini adalah sebuah permata tersembunyi yang memancarkan
+                                                keindahan alam dan kehidupan yang damai.</p>
+
+                                            <p><b>Keindahan Alam yang Menakjubkan</b></p>
+
+                                            <p>Desa Harmoni terletak di tepi sebuah sungai yang mengalir tenang, dikelilingi
+                                                oleh pegunungan hijau yang megah. Hijaunya hutan lebat dan keindahan alam di
+                                                sekitar desa membuatnya menjadi tempat yang cocok untuk pecinta alam. Setiap
+                                                musim, desa ini dikelilingi oleh pemandangan yang berubah-ubah, dari padang
+                                                bunga liar yang berwarna-warni di musim semi hingga hutan berdaun merah yang
+                                                dramatis di musim gugur.</p>
+
+                                            <p><b>Kehidupan Masyarakat yang Bersahaja</b></p>
+
+                                            <p>Masyarakat Desa Harmoni dikenal dengan keramahan dan kebersahajaan mereka.
+                                                Mereka menjalani kehidupan yang sederhana, banyak dari mereka adalah petani
+                                                dan pengrajin lokal. Kebersamaan dan gotong royong adalah nilai-nilai yang
+                                                sangat dijunjung tinggi di desa ini.</p>
+
+                                            <p><b>Tradisi dan Kebudayaan yang Kaya</b></p>
+
+                                            <p>Desa ini juga memiliki warisan budaya yang kaya. Setiap tahun, mereka
+                                                merayakan berbagai festival dan upacara adat yang memperlihatkan kekayaan
+                                                budaya mereka. Salah satu yang paling terkenal adalah Festival Panen yang
+                                                merayakan hasil panen yang melimpah.</p>
+
+                                            <p><b>Pendidikan dan Pembangunan</b></p>
+
+                                            <p>Meskipun desa ini mungkin terletak jauh dari pusat kota, pendidikan tetap
+                                                menjadi prioritas. Desa ini memiliki sekolah dasar yang aktif dan berusaha
+                                                untuk meningkatkan akses pendidikan bagi anak-anak mereka. Selain itu,
+                                                mereka juga terlibat dalam proyek-proyek pembangunan yang bertujuan untuk
+                                                meningkatkan infrastruktur dan kesejahteraan masyarakat.</p>
+
+                                            <p><b>Mengunjungi Desa Harmoni</b></p>
+
+                                            <p>Bagi para wisatawan yang mencari kedamaian dan keindahan alam, Desa Harmoni
+                                                adalah tempat yang sempurna untuk dikunjungi. Anda dapat mengeksplorasi
+                                                hutan-hutan yang hijau, menikmati sungai yang tenang, dan berinteraksi
+                                                dengan masyarakat yang ramah. Ini adalah tempat yang sempurna untuk
+                                                melupakan kesibukan kota dan merasakan kedamaian desa yang sesungguhnya.</p>
+
+                                            <p>Desa Harmoni adalah contoh nyata bahwa kehidupan sederhana dan keindahan alam
+                                                masih bisa ditemukan di dunia ini. Desa ini adalah permata yang tersembunyi,
+                                                dan kami berharap bahwa pesona dan kehangatannya akan terus berlanjut
+                                                selamanya.</p>
                                         </div>
                                         <!-- /.post-content -->
-                                        <div
+                                        {{-- <div
                                             class="post-footer d-md-flex flex-md-row justify-content-md-between align-items-center mt-8">
                                             <div>
                                                 <ul class="list-unstyled tag-list mb-0">
@@ -148,13 +137,13 @@
                                                 </div>
                                                 <!--/.share-dropdown -->
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <!-- /.post-footer -->
                                     </article>
                                     <!-- /.post -->
                                 </div>
                                 <!-- /.classic-view -->
-                                <hr />
+                                {{-- <hr />
                                 <div class="author-info d-md-flex align-items-center mb-3">
                                     <div class="d-flex align-items-center">
                                         <figure class="user-avatar"><img class="rounded-circle" alt=""
@@ -169,9 +158,9 @@
                                             class="btn btn-sm btn-soft-ash rounded-pill btn-icon btn-icon-start mb-0"><i
                                                 class="uil uil-file-alt"></i> All Posts</a>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- /.author-info -->
-                                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+                                {{-- <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
                                     massa justo sit amet risus. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac.
                                     Maecenas faucibus mollis interdum.</p>
                                 <nav class="nav social">
@@ -180,9 +169,9 @@
                                     <a href="#"><i class="uil uil-dribbble"></i></a>
                                     <a href="#"><i class="uil uil-instagram"></i></a>
                                     <a href="#"><i class="uil uil-youtube"></i></a>
-                                </nav>
+                                </nav> --}}
                                 <!-- /.social -->
-                                <hr />
+                                {{-- <hr />
                                 <h3 class="mb-6">You Might Also Like</h3>
                                 <div class="swiper-container blog grid-view mb-16" data-margin="30" data-dots="true"
                                     data-items-md="2" data-items-xs="1">
@@ -326,9 +315,9 @@
                                         <!--/.swiper-wrapper -->
                                     </div>
                                     <!-- /.swiper -->
-                                </div>
+                                </div> --}}
                                 <!-- /.swiper-container -->
-                                <hr />
+                                {{-- <hr />
                                 <div id="comments">
                                     <h3 class="mb-6">5 Comments</h3>
                                     <ol id="singlecomments" class="commentlist">
@@ -484,9 +473,9 @@
                                                 montes, nascetur ridiculus mus.</p>
                                         </li>
                                     </ol>
-                                </div>
+                                </div> --}}
                                 <!-- /#comments -->
-                                <hr />
+                                {{-- <hr />
                                 <h3 class="mb-3">Would you like to share your thoughts?</h3>
                                 <p class="mb-7">Your email address will not be published. Required fields are marked *
                                 </p>
@@ -508,7 +497,7 @@
                                         <label>Comment *</label>
                                     </div>
                                     <button type="submit" class="btn btn-primary rounded-pill mb-0">Submit</button>
-                                </form>
+                                </form> --}}
                                 <!-- /.comment-form -->
                             </div>
                             <!-- /.card-body -->

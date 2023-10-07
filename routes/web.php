@@ -28,6 +28,6 @@ Route::get('/profil', function () {
 });
 
 Route::prefix('articles')->group(function () {
-    Route::get('/', ListArticlesController::class);
-    Route::get('/{article_id}', DetailArticleController::class);
+    Route::get('/', ListArticlesController::class)->name('list_articles');
+    Route::get('/{article_id}', DetailArticleController::class)->name('detail_article');
 });
