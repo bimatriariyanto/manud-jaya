@@ -8,7 +8,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item "><a href="{{ route('list_articles') }}">Kabar Desa</a></li>
                             <li class="breadcrumb-item active fw-bold" aria-current="page">
-                                Desa Harmoni: Kisah Kecil di Tengah Keindahan Alam
+                                {{ $article['title'] }}
                             </li>
                         </ol>
                     </nav>
@@ -21,9 +21,9 @@
                             <a href="#" class="hover" rel="category">Teamwork</a>
                         </div> --}}
                         <!-- /.post-category -->
-                        <h1 class="display-1 mb-4">Desa Harmoni: Kisah Kecil di Tengah Keindahan Alam</h1>
+                        <h1 class="display-1 mb-4">{{ $article['title'] }}</h1>
                         <ul class="post-meta mb-5">
-                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span>6 Oktober 2023</span></li>
+                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span>{{ $article->createdAt->isoFormat('D MMMM Y') }}</span></li>
                             {{-- <li class="post-author"><a href="#"><i class="uil uil-user"></i><span>By
                                         Sandbox</span></a></li>
                             <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3<span>
@@ -48,60 +48,13 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="blog single mt-n17">
                         <div class="card">
-                            <figure class="card-img-top"><img src="./assets/img/photos/b1.jpg" alt="" /></figure>
+                            <figure class="card-img-top"><img src="{{ $article['image_url'] }}" alt="" /></figure>
                             <div class="card-body">
                                 <div class="classic-view">
                                     <article class="post">
                                         <div class="post-content mb-5">
-                                            <h2 class="h1 mb-4">Desa Harmoni: Kisah Kecil di Tengah Keindahan Alam</h2>
-                                            <p><i>Desa Harmoni, 6 Oktober 2023</i> - Di suatu sudut yang tersembunyi di pedalaman,
-                                                terletak sebuah desa kecil yang dikenal dengan nama &quot;Desa
-                                                Harmoni.&quot; Desa ini adalah sebuah permata tersembunyi yang memancarkan
-                                                keindahan alam dan kehidupan yang damai.</p>
-
-                                            <p><b>Keindahan Alam yang Menakjubkan</b></p>
-
-                                            <p>Desa Harmoni terletak di tepi sebuah sungai yang mengalir tenang, dikelilingi
-                                                oleh pegunungan hijau yang megah. Hijaunya hutan lebat dan keindahan alam di
-                                                sekitar desa membuatnya menjadi tempat yang cocok untuk pecinta alam. Setiap
-                                                musim, desa ini dikelilingi oleh pemandangan yang berubah-ubah, dari padang
-                                                bunga liar yang berwarna-warni di musim semi hingga hutan berdaun merah yang
-                                                dramatis di musim gugur.</p>
-
-                                            <p><b>Kehidupan Masyarakat yang Bersahaja</b></p>
-
-                                            <p>Masyarakat Desa Harmoni dikenal dengan keramahan dan kebersahajaan mereka.
-                                                Mereka menjalani kehidupan yang sederhana, banyak dari mereka adalah petani
-                                                dan pengrajin lokal. Kebersamaan dan gotong royong adalah nilai-nilai yang
-                                                sangat dijunjung tinggi di desa ini.</p>
-
-                                            <p><b>Tradisi dan Kebudayaan yang Kaya</b></p>
-
-                                            <p>Desa ini juga memiliki warisan budaya yang kaya. Setiap tahun, mereka
-                                                merayakan berbagai festival dan upacara adat yang memperlihatkan kekayaan
-                                                budaya mereka. Salah satu yang paling terkenal adalah Festival Panen yang
-                                                merayakan hasil panen yang melimpah.</p>
-
-                                            <p><b>Pendidikan dan Pembangunan</b></p>
-
-                                            <p>Meskipun desa ini mungkin terletak jauh dari pusat kota, pendidikan tetap
-                                                menjadi prioritas. Desa ini memiliki sekolah dasar yang aktif dan berusaha
-                                                untuk meningkatkan akses pendidikan bagi anak-anak mereka. Selain itu,
-                                                mereka juga terlibat dalam proyek-proyek pembangunan yang bertujuan untuk
-                                                meningkatkan infrastruktur dan kesejahteraan masyarakat.</p>
-
-                                            <p><b>Mengunjungi Desa Harmoni</b></p>
-
-                                            <p>Bagi para wisatawan yang mencari kedamaian dan keindahan alam, Desa Harmoni
-                                                adalah tempat yang sempurna untuk dikunjungi. Anda dapat mengeksplorasi
-                                                hutan-hutan yang hijau, menikmati sungai yang tenang, dan berinteraksi
-                                                dengan masyarakat yang ramah. Ini adalah tempat yang sempurna untuk
-                                                melupakan kesibukan kota dan merasakan kedamaian desa yang sesungguhnya.</p>
-
-                                            <p>Desa Harmoni adalah contoh nyata bahwa kehidupan sederhana dan keindahan alam
-                                                masih bisa ditemukan di dunia ini. Desa ini adalah permata yang tersembunyi,
-                                                dan kami berharap bahwa pesona dan kehangatannya akan terus berlanjut
-                                                selamanya.</p>
+                                            <h2 class="h1 mb-4">{{ $article['title'] }}</h2>
+                                            <p>{!! $article['body'] !!}</p>
                                         </div>
                                         <!-- /.post-content -->
                                         {{-- <div

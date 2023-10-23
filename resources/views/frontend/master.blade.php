@@ -77,13 +77,13 @@
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="dropdown-item" href="{{ route('list_articles') }}">Semua</a>
                                         </li>
-                                        <li class="nav-item"><a class="dropdown-item" href="#">Kegiatan Umum</a>
+                                        <li class="nav-item"><a class="dropdown-item" href="{{ route('list_articles', ['category' => 'Kegiatan Umum']) }}">Kegiatan Umum</a>
                                         </li>
-                                        <li class="nav-item"><a class="dropdown-item" href="#">Himbauan</a>
+                                        <li class="nav-item"><a class="dropdown-item" href="{{ route('list_articles', ['category' => 'Himbauan']) }}">Himbauan</a>
                                         </li>
-                                        <li class="nav-item"><a class="dropdown-item" href="#">Layanan Masyarakat</a>
+                                        <li class="nav-item"><a class="dropdown-item" href="{{ route('list_articles', ['category' => 'Layanan Masyarakat']) }}">Layanan Masyarakat</a>
                                         </li>
-                                        <li class="nav-item"><a class="dropdown-item" href="#">Laporan Penggunaan Dana Desa</a>
+                                        <li class="nav-item"><a class="dropdown-item" href="{{ route('list_articles', ['category' => 'Laporan Penggunaan Dana Desa']) }}">Laporan Penggunaan Dana Desa</a>
                                         </li>
                                         {{-- <li class="nav-item"><a class="dropdown-item" href="#">Visi
                                                 & Misi</a></li>
