@@ -93,7 +93,15 @@
                                             </a></li> --}}
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
+{{--                                <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>--}}
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                       data-bs-toggle="dropdown">Formulir</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfyhf6gtHstfGs9M8dGkM7GFGXTyrt2YAtDdWNHVDZTAWYDkQ/viewform?usp=pp_url">Formulir Permohonan KTP</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                             <!-- /.navbar-nav -->
                             <div class="offcanvas-footer d-lg-none">
